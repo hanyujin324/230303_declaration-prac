@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const root= document.getElementById("root");
+    console.log(typeof (root.style));
+//  객체의 키부분에 조회하는 것. 객체 조회법. 객체안에 임의의 변수(test)를 넣고 조회
+    for (let test in root.style){
+      console.log(test);
+      // 만약에 prac에 width값이 없으면 100px를 넣어줘 =element.style.width="100px";
+      // root.style에 하나하나 width를 비교한다
+      if(test==="width"){
+        test==="100px";
+      }else{
+        console.error("없다");
+      }
+    }
+  </script>
+</body>
+</html>
